@@ -1,0 +1,17 @@
+print("Register your account now!")
+
+username = str(input("Enter an username: "))
+password = str(input("Enter a password: "))
+
+login_username = ""
+login_password = ""
+
+
+print("Account making successful! \n")
+
+while not(login_username == username) and not(login_password == password) :
+    print("Enter you login details  \n")
+    login_username = input("Username: ")
+    login_password = input("Password: ")
+
+print("successfully login")
