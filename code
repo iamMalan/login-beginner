@@ -1,5 +1,8 @@
+import time
+
 print("Register your account now!")
 
+time.sleep(1)
 username = str(input("Enter an username: "))
 password = str(input("Enter a password: "))
 
@@ -9,9 +12,11 @@ login_password = ""
 
 print("Account making successful! \n")
 
+time.sleep(1)
+
 while not(login_username == username) and not(login_password == password) :
-    print("Enter you login details  \n")
+    print("\nEnter you login details  \n")
     login_username = input("Username: ")
     login_password = input("Password: ")
-
-print("successfully login")
+time.sleep(1)
+print("successfully login!!! \nWelcome back "+username+" !")
